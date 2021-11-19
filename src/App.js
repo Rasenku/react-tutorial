@@ -1,9 +1,13 @@
 import logo from './logo.svg';
+import POPOSList from './POPOSList';
+import Title from './Title';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Title />
+      <POPOSList />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
