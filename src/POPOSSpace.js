@@ -10,8 +10,8 @@ function POPOSSpace(props) {
         height="300"
         alt="Hello"
       />
-      <h1>{Name}</h1>
-      <div>{Address}</div>
+      <h1>{name}</h1>
+      <div>{address}</div>
     </div>
   )
 }
