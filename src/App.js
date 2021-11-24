@@ -1,29 +1,28 @@
+
+import { HashRouter as Router, Route } from 'react-router-dom';
+
+
 import logo from './logo.svg';
 import POPOSList from './POPOSList';
 import Title from './Title';
 import Footer from './Footer';
 import './App.css';
+import React from 'react'
+import About from './About';
+import POPOSDetails from './POPOSDetails'
+
 
 function App() {
   return (
-    <div className="App">
-      <Title />
-      <POPOSList />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Title />
+        <Route exact path="/" component={POPOSList}/>
+        <Route path="/about" component={About} />
+        <Route path="/details/:id" component={POPOSDetails} />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
