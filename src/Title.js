@@ -8,7 +8,7 @@ function Title() {
       <div className="background">
         <header>
           <title>First_React</title>
-          <h1 className="Title">Ant's SFPOPOS</h1>
+          <h1 className="Title">Dahveyea's SFPOPOS</h1>
           <h3 className="Title-Subtitle">Dahveyea's San Francisco Privately Owned Public Open Spaces</h3>
   
           <div className="nav-link">

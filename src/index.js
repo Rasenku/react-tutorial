@@ -6,13 +6,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import About from './About'
 import POPOSList from './POPOSList'
+import POPOSDetails from './POPOSDetails'
 
 ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/details/:id" element={<POPOSDetails/>} />
       </Route>
     </Routes>
   </Router>,

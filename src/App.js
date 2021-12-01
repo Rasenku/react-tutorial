@@ -1,5 +1,5 @@
 
-import { HashRouter as Router, Route } from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
 
 import logo from './logo.svg';
@@ -14,15 +14,11 @@ import POPOSDetails from './POPOSDetails'
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Title />
-        <Route exact path="/" component={POPOSList}/>
-        <Route path="/about" component={About} />
-        <Route path="/details/:id" component={POPOSDetails} />
+        <Outlet/>
         <Footer />
       </div>
-    </Router>
   );
 }
 
